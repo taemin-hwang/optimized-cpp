@@ -1,420 +1,242 @@
-Flat profile:
-
-Each sample counts as 0.01 seconds.
- no time accumulated
-
-  %   cumulative   self              self     total           
- time   seconds   seconds    calls  Ts/call  Ts/call  name    
-  0.00      0.00     0.00        7     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1l> >::count() const
-  0.00      0.00     0.00        5     0.00     0.00  std::unique_ptr<Func, std::default_delete<Func> >::get() const
-  0.00      0.00     0.00        5     0.00     0.00  std::_Head_base<0ul, Func*, false>::_M_head(std::_Head_base<0ul, Func*, false> const&)
-  0.00      0.00     0.00        5     0.00     0.00  std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&)
-  0.00      0.00     0.00        5     0.00     0.00  Func* const& std::__get_helper<0ul, Func*, std::default_delete<Func> >(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&)
-  0.00      0.00     0.00        5     0.00     0.00  std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type const& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> > const&)
-  0.00      0.00     0.00        5     0.00     0.00  std::default_delete<Func>&& std::forward<std::default_delete<Func> >(std::remove_reference<std::default_delete<Func> >::type&)
-  0.00      0.00     0.00        4     0.00     0.00  std::unique_ptr<Func, std::default_delete<Func> >::operator->() const
-  0.00      0.00     0.00        4     0.00     0.00  std::_Head_base<0ul, Func*, false>::_M_head(std::_Head_base<0ul, Func*, false>&)
-  0.00      0.00     0.00        4     0.00     0.00  std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >&)
-  0.00      0.00     0.00        4     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1l> >::duration<long, void>(long const&)
-  0.00      0.00     0.00        4     0.00     0.00  _ZSt12__get_helperILm0EP4FuncISt14default_deleteIS0_EEERT0_RSt11_Tuple_implIXT_EIS4_DpT1_EE
-  0.00      0.00     0.00        4     0.00     0.00  std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&)
-  0.00      0.00     0.00        3     0.00     0.00  std::_Head_base<1ul, std::default_delete<Func>, true>::_M_head(std::_Head_base<1ul, std::default_delete<Func>, true>&)
-  0.00      0.00     0.00        3     0.00     0.00  std::unique_ptr<Func, std::default_delete<Func> >::get_deleter()
-  0.00      0.00     0.00        3     0.00     0.00  std::_Tuple_impl<1ul, std::default_delete<Func> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Func> >&)
-  0.00      0.00     0.00        3     0.00     0.00  std::default_delete<Func>& std::__get_helper<1ul, std::default_delete<Func>>(std::_Tuple_impl<1ul, std::default_delete<Func>>&)
-  0.00      0.00     0.00        3     0.00     0.00  std::tuple_element<1ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<1ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&)
-  0.00      0.00     0.00        3     0.00     0.00  std::remove_reference<Func*&>::type&& std::move<Func*&>(Func*&)
-  0.00      0.00     0.00        3     0.00     0.00  Func*& std::forward<Func*&>(std::remove_reference<Func*&>::type&)
-  0.00      0.00     0.00        2     0.00     0.00  Func::Run()
-  0.00      0.00     0.00        2     0.00     0.00  Func::SetFunc(void (*)())
-  0.00      0.00     0.00        2     0.00     0.00  Manager::Run()
-  0.00      0.00     0.00        2     0.00     0.00  Manager::SetFunc(void (*)())
-  0.00      0.00     0.00        2     0.00     0.00  std::unique_ptr<Func, std::default_delete<Func> >::~unique_ptr()
-  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
-  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
-  0.00      0.00     0.00        1     0.00     0.00  Manager::Manager()
-  0.00      0.00     0.00        1     0.00     0.00  Manager::~Manager()
-  0.00      0.00     0.00        1     0.00     0.00  std::default_delete<Func>::operator()(Func*) const
-  0.00      0.00     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const
-  0.00      0.00     0.00        1     0.00     0.00  std::_Head_base<0ul, Func*, false>::_Head_base<Func*&>(Func*&)
-  0.00      0.00     0.00        1     0.00     0.00  std::_Head_base<0ul, Func*, false>::_Head_base()
-  0.00      0.00     0.00        1     0.00     0.00  std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base<std::default_delete<Func> >(std::default_delete<Func>&&)
-  0.00      0.00     0.00        1     0.00     0.00  std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base()
-  0.00      0.00     0.00        1     0.00     0.00  std::unique_ptr<Func, std::default_delete<Func> >::reset(Func*)
-  0.00      0.00     0.00        1     0.00     0.00  std::unique_ptr<Func, std::default_delete<Func> >::release()
-  0.00      0.00     0.00        1     0.00     0.00  std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr(Func*)
-  0.00      0.00     0.00        1     0.00     0.00  std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr()
-  0.00      0.00     0.00        1     0.00     0.00  std::unique_ptr<Func, std::default_delete<Func> >::operator=(std::unique_ptr<Func, std::default_delete<Func> >&&)
-  0.00      0.00     0.00        1     0.00     0.00  std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl<Func*<std::default_delete<Func> >&, void>(Func*<std::default_delete<Func> >&, (void&&)...)
-  0.00      0.00     0.00        1     0.00     0.00  std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl()
-  0.00      0.00     0.00        1     0.00     0.00  std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl<std::default_delete<Func> >(std::default_delete<Func>&&)
-  0.00      0.00     0.00        1     0.00     0.00  std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl()
-  0.00      0.00     0.00        1     0.00     0.00  void std::this_thread::sleep_for<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&)
-  0.00      0.00     0.00        1     0.00     0.00  std::default_delete<Func>::default_delete()
-  0.00      0.00     0.00        1     0.00     0.00  std::tuple<Func*, std::default_delete<Func> >::tuple()
-  0.00      0.00     0.00        1     0.00     0.00  std::tuple<Func*, std::default_delete<Func> >::tuple<Func*&, std::default_delete<Func>, void>(Func*&, std::default_delete<Func>&&)
-  0.00      0.00     0.00        1     0.00     0.00  std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&)
-  0.00      0.00     0.00        1     0.00     0.00  std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1l> > >::value, std::chrono::duration<long, std::ratio<1l, 1l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1l> >, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&)
-  0.00      0.00     0.00        1     0.00     0.00  std::chrono::duration_values<long>::zero()
-  0.00      0.00     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000000000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::ratio<1000000000l, 1l>, long, false, true>::__cast<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&)
-  0.00      0.00     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1l> >, std::ratio<1l, 1l>, long, true, true>::__cast<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&)
-  0.00      0.00     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&)
-  0.00      0.00     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1l> >::zero()
-  0.00      0.00     0.00        1     0.00     0.00  bool std::chrono::operator<=<long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&)
-  0.00      0.00     0.00        1     0.00     0.00  bool std::chrono::operator< <long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&)
-  0.00      0.00     0.00        1     0.00     0.00  std::common_type<std::chrono::duration<long, std::ratio<1l, 1l> >, std::chrono::duration<long, std::ratio<1l, 1l> > >::type std::chrono::operator-<long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&)
-  0.00      0.00     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1l> > std::literals::chrono_literals::__check_overflow<std::chrono::duration<long, std::ratio<1l, 1l> >, (char)49>()
-  0.00      0.00     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1l> > std::literals::chrono_literals::operator"" s<(char)49>()
-  0.00      0.00     0.00        1     0.00     0.00  std::_MakeUniq<Func>::__single_object std::make_unique<Func>()
-  0.00      0.00     0.00        1     0.00     0.00  void std::swap<Func*>(Func*&, Func*&)
-  0.00      0.00     0.00        1     0.00     0.00  main::{lambda()#2}::operator()() const
-  0.00      0.00     0.00        1     0.00     0.00  main::{lambda()#2}::operator void (*)()() const
-  0.00      0.00     0.00        1     0.00     0.00  main::{lambda()#1}::operator()() const
-  0.00      0.00     0.00        1     0.00     0.00  main::{lambda()#1}::operator void (*)()() const
-  0.00      0.00     0.00        1     0.00     0.00  main::{lambda()#2}::_FUN()
-  0.00      0.00     0.00        1     0.00     0.00  main::{lambda()#1}::_FUN()
-
- %         the percentage of the total running time of the
-time       program used by this function.
-
-cumulative a running sum of the number of seconds accounted
- seconds   for by this function and those listed above it.
-
- self      the number of seconds accounted for by this
-seconds    function alone.  This is the major sort for this
-           listing.
-
-calls      the number of times this function was invoked, if
-           this function is profiled, else blank.
-
- self      the average number of milliseconds spent in this
-ms/call    function per call, if this function is profiled,
-	   else blank.
-
- total     the average number of milliseconds spent in this
-ms/call    function and its descendents per call, if this
-	   function is profiled, else blank.
-
-name       the name of the function.  This is the minor sort
-           for this listing. The index shows the location of
-	   the function in the gprof listing. If the index is
-	   in parenthesis it shows where it would appear in
-	   the gprof listing if it were to be printed.
-
-Copyright (C) 2012-2015 Free Software Foundation, Inc.
-
-Copying and distribution of this file, with or without modification,
-are permitted in any medium without royalty provided the copyright
-notice and this notice are preserved.
-
 		     Call graph (explanation follows)
 
 
-granularity: each sample hit covers 2 byte(s) no time propagated
+granularity: each sample hit covers 2 byte(s) for 99.74% of 0.01 seconds
 
 index % time    self  children    called     name
-                0.00    0.00       1/7           std::chrono::duration<long, std::ratio<1l, 1000000000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::ratio<1000000000l, 1l>, long, false, true>::__cast<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [59]
-                0.00    0.00       1/7           std::chrono::duration<long, std::ratio<1l, 1l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1l> >, std::ratio<1l, 1l>, long, true, true>::__cast<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [60]
-                0.00    0.00       1/7           void std::this_thread::sleep_for<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [52]
-                0.00    0.00       2/7           bool std::chrono::operator< <long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&) [64]
-                0.00    0.00       2/7           std::common_type<std::chrono::duration<long, std::ratio<1l, 1l> >, std::chrono::duration<long, std::ratio<1l, 1l> > >::type std::chrono::operator-<long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&) [65]
-[8]      0.0    0.00    0.00       7         std::chrono::duration<long, std::ratio<1l, 1l> >::count() const [8]
+                                                 <spontaneous>
+[1]    100.0    0.00    0.01                 main [1]
+                0.00    0.01       2/2           Manager::Run() [3]
+                0.00    0.00       2/2           Manager::SetFunc(void (*)()) [31]
+                0.00    0.00       1/1           Manager::Manager() [35]
+                0.00    0.00       1/1           main::{lambda()#1}::operator void (*)()() const [58]
+                0.00    0.00       1/1           main::{lambda()#2}::operator void (*)()() const [56]
+                0.00    0.00       1/1           Manager::~Manager() [36]
 -----------------------------------------------
-                0.00    0.00       1/5           std::unique_ptr<Func, std::default_delete<Func> >::release() [44]
-                0.00    0.00       4/5           std::unique_ptr<Func, std::default_delete<Func> >::operator->() const [15]
-[9]      0.0    0.00    0.00       5         std::unique_ptr<Func, std::default_delete<Func> >::get() const [9]
-                0.00    0.00       5/5           std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type const& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> > const&) [13]
+                0.00    0.01       2/2           Manager::Run() [3]
+[2]    100.0    0.00    0.01       2         Func::Run() [2]
+                0.00    0.01       1/1           main::{lambda()#2}::_FUN() [5]
+                0.00    0.00       1/1           main::{lambda()#1}::_FUN() [59]
 -----------------------------------------------
-                0.00    0.00       5/5           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&) [11]
-[10]     0.0    0.00    0.00       5         std::_Head_base<0ul, Func*, false>::_M_head(std::_Head_base<0ul, Func*, false> const&) [10]
+                0.00    0.01       2/2           main [1]
+[3]    100.0    0.00    0.01       2         Manager::Run() [3]
+                0.00    0.01       2/2           Func::Run() [2]
+                0.00    0.00       2/4           std::unique_ptr<Func, std::default_delete<Func> >::operator->() const [18]
 -----------------------------------------------
-                0.00    0.00       5/5           Func* const& std::__get_helper<0ul, Func*, std::default_delete<Func> >(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&) [12]
-[11]     0.0    0.00    0.00       5         std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&) [11]
-                0.00    0.00       5/5           std::_Head_base<0ul, Func*, false>::_M_head(std::_Head_base<0ul, Func*, false> const&) [10]
+                0.01    0.00       1/1           main::{lambda()#2}::_FUN() [5]
+[4]    100.0    0.01    0.00       1         main::{lambda()#2}::operator()() const [4]
 -----------------------------------------------
-                0.00    0.00       5/5           std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type const& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> > const&) [13]
-[12]     0.0    0.00    0.00       5         Func* const& std::__get_helper<0ul, Func*, std::default_delete<Func> >(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&) [12]
-                0.00    0.00       5/5           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&) [11]
+                0.00    0.01       1/1           Func::Run() [2]
+[5]    100.0    0.00    0.01       1         main::{lambda()#2}::_FUN() [5]
+                0.01    0.00       1/1           main::{lambda()#2}::operator()() const [4]
 -----------------------------------------------
-                0.00    0.00       5/5           std::unique_ptr<Func, std::default_delete<Func> >::get() const [9]
-[13]     0.0    0.00    0.00       5         std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type const& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> > const&) [13]
-                0.00    0.00       5/5           Func* const& std::__get_helper<0ul, Func*, std::default_delete<Func> >(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&) [12]
+                0.00    0.00       1/5           std::unique_ptr<Func, std::default_delete<Func> >::release() [43]
+                0.00    0.00       4/5           std::unique_ptr<Func, std::default_delete<Func> >::operator->() const [18]
+[12]     0.0    0.00    0.00       5         std::unique_ptr<Func, std::default_delete<Func> >::get() const [12]
+                0.00    0.00       5/5           std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type const& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> > const&) [16]
 -----------------------------------------------
-                0.00    0.00       1/5           std::unique_ptr<Func, std::default_delete<Func> >::operator=(std::unique_ptr<Func, std::default_delete<Func> >&&) [47]
-                0.00    0.00       1/5           std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base<std::default_delete<Func> >(std::default_delete<Func>&&) [41]
-                0.00    0.00       1/5           std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl<std::default_delete<Func> >(std::default_delete<Func>&&) [50]
-                0.00    0.00       1/5           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl<Func*<std::default_delete<Func> >&, void>(Func*<std::default_delete<Func> >&, (void&&)...) [48]
-                0.00    0.00       1/5           std::tuple<Func*, std::default_delete<Func> >::tuple<Func*&, std::default_delete<Func>, void>(Func*&, std::default_delete<Func>&&) [55]
-[14]     0.0    0.00    0.00       5         std::default_delete<Func>&& std::forward<std::default_delete<Func> >(std::remove_reference<std::default_delete<Func> >::type&) [14]
+                0.00    0.00       5/5           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&) [14]
+[13]     0.0    0.00    0.00       5         std::_Head_base<0ul, Func*, false>::_M_head(std::_Head_base<0ul, Func*, false> const&) [13]
+-----------------------------------------------
+                0.00    0.00       5/5           Func* const& std::__get_helper<0ul, Func*, std::default_delete<Func> >(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&) [15]
+[14]     0.0    0.00    0.00       5         std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&) [14]
+                0.00    0.00       5/5           std::_Head_base<0ul, Func*, false>::_M_head(std::_Head_base<0ul, Func*, false> const&) [13]
+-----------------------------------------------
+                0.00    0.00       5/5           std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type const& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> > const&) [16]
+[15]     0.0    0.00    0.00       5         Func* const& std::__get_helper<0ul, Func*, std::default_delete<Func> >(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&) [15]
+                0.00    0.00       5/5           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&) [14]
+-----------------------------------------------
+                0.00    0.00       5/5           std::unique_ptr<Func, std::default_delete<Func> >::get() const [12]
+[16]     0.0    0.00    0.00       5         std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type const& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> > const&) [16]
+                0.00    0.00       5/5           Func* const& std::__get_helper<0ul, Func*, std::default_delete<Func> >(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&) [15]
+-----------------------------------------------
+                0.00    0.00       1/5           std::unique_ptr<Func, std::default_delete<Func> >::operator=(std::unique_ptr<Func, std::default_delete<Func> >&&) [46]
+                0.00    0.00       1/5           std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base<std::default_delete<Func> >(std::default_delete<Func>&&) [40]
+                0.00    0.00       1/5           std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl<std::default_delete<Func> >(std::default_delete<Func>&&) [49]
+                0.00    0.00       1/5           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl<Func*<std::default_delete<Func> >&, void>(Func*<std::default_delete<Func> >&, (void&&)...) [47]
+                0.00    0.00       1/5           std::tuple<Func*, std::default_delete<Func> >::tuple<Func*&, std::default_delete<Func>, void>(Func*&, std::default_delete<Func>&&) [53]
+[17]     0.0    0.00    0.00       5         std::default_delete<Func>&& std::forward<std::default_delete<Func> >(std::remove_reference<std::default_delete<Func> >::type&) [17]
 -----------------------------------------------
                 0.00    0.00       2/4           Manager::SetFunc(void (*)()) [31]
-                0.00    0.00       2/4           Manager::Run() [30]
-[15]     0.0    0.00    0.00       4         std::unique_ptr<Func, std::default_delete<Func> >::operator->() const [15]
-                0.00    0.00       4/5           std::unique_ptr<Func, std::default_delete<Func> >::get() const [9]
+                0.00    0.00       2/4           Manager::Run() [3]
+[18]     0.0    0.00    0.00       4         std::unique_ptr<Func, std::default_delete<Func> >::operator->() const [18]
+                0.00    0.00       4/5           std::unique_ptr<Func, std::default_delete<Func> >::get() const [12]
 -----------------------------------------------
-                0.00    0.00       4/4           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >&) [17]
-[16]     0.0    0.00    0.00       4         std::_Head_base<0ul, Func*, false>::_M_head(std::_Head_base<0ul, Func*, false>&) [16]
+                0.00    0.00       4/4           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >&) [20]
+[19]     0.0    0.00    0.00       4         std::_Head_base<0ul, Func*, false>::_M_head(std::_Head_base<0ul, Func*, false>&) [19]
 -----------------------------------------------
-                0.00    0.00       4/4           _ZSt12__get_helperILm0EP4FuncISt14default_deleteIS0_EEERT0_RSt11_Tuple_implIXT_EIS4_DpT1_EE [19]
-[17]     0.0    0.00    0.00       4         std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >&) [17]
-                0.00    0.00       4/4           std::_Head_base<0ul, Func*, false>::_M_head(std::_Head_base<0ul, Func*, false>&) [16]
+                0.00    0.00       4/4           _ZSt12__get_helperILm0EP4FuncISt14default_deleteIS0_EEERT0_RSt11_Tuple_implIXT_EIS4_DpT1_EE [21]
+[20]     0.0    0.00    0.00       4         std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >&) [20]
+                0.00    0.00       4/4           std::_Head_base<0ul, Func*, false>::_M_head(std::_Head_base<0ul, Func*, false>&) [19]
 -----------------------------------------------
-                0.00    0.00       1/4           std::chrono::duration<long, std::ratio<1l, 1l> > std::literals::chrono_literals::__check_overflow<std::chrono::duration<long, std::ratio<1l, 1l> >, (char)49>() [66]
-                0.00    0.00       1/4           std::chrono::duration<long, std::ratio<1l, 1l> >::zero() [62]
-                0.00    0.00       1/4           std::chrono::duration<long, std::ratio<1l, 1l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1l> >, std::ratio<1l, 1l>, long, true, true>::__cast<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [60]
-                0.00    0.00       1/4           std::common_type<std::chrono::duration<long, std::ratio<1l, 1l> >, std::chrono::duration<long, std::ratio<1l, 1l> > >::type std::chrono::operator-<long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&) [65]
-[18]     0.0    0.00    0.00       4         std::chrono::duration<long, std::ratio<1l, 1l> >::duration<long, void>(long const&) [18]
+                0.00    0.00       4/4           std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [22]
+[21]     0.0    0.00    0.00       4         _ZSt12__get_helperILm0EP4FuncISt14default_deleteIS0_EEERT0_RSt11_Tuple_implIXT_EIS4_DpT1_EE [21]
+                0.00    0.00       4/4           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >&) [20]
 -----------------------------------------------
-                0.00    0.00       4/4           std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [20]
-[19]     0.0    0.00    0.00       4         _ZSt12__get_helperILm0EP4FuncISt14default_deleteIS0_EEERT0_RSt11_Tuple_implIXT_EIS4_DpT1_EE [19]
-                0.00    0.00       4/4           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >&) [17]
------------------------------------------------
-                0.00    0.00       1/4           std::unique_ptr<Func, std::default_delete<Func> >::reset(Func*) [43]
-                0.00    0.00       1/4           std::unique_ptr<Func, std::default_delete<Func> >::release() [44]
+                0.00    0.00       1/4           std::unique_ptr<Func, std::default_delete<Func> >::reset(Func*) [42]
+                0.00    0.00       1/4           std::unique_ptr<Func, std::default_delete<Func> >::release() [43]
                 0.00    0.00       2/4           std::unique_ptr<Func, std::default_delete<Func> >::~unique_ptr() [32]
-[20]     0.0    0.00    0.00       4         std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [20]
-                0.00    0.00       4/4           _ZSt12__get_helperILm0EP4FuncISt14default_deleteIS0_EEERT0_RSt11_Tuple_implIXT_EIS4_DpT1_EE [19]
+[22]     0.0    0.00    0.00       4         std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [22]
+                0.00    0.00       4/4           _ZSt12__get_helperILm0EP4FuncISt14default_deleteIS0_EEERT0_RSt11_Tuple_implIXT_EIS4_DpT1_EE [21]
 -----------------------------------------------
-                0.00    0.00       3/3           std::_Tuple_impl<1ul, std::default_delete<Func> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Func> >&) [23]
-[21]     0.0    0.00    0.00       3         std::_Head_base<1ul, std::default_delete<Func>, true>::_M_head(std::_Head_base<1ul, std::default_delete<Func>, true>&) [21]
+                0.00    0.00       3/3           std::_Tuple_impl<1ul, std::default_delete<Func> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Func> >&) [25]
+[23]     0.0    0.00    0.00       3         std::_Head_base<1ul, std::default_delete<Func>, true>::_M_head(std::_Head_base<1ul, std::default_delete<Func>, true>&) [23]
 -----------------------------------------------
                 0.00    0.00       1/3           std::unique_ptr<Func, std::default_delete<Func> >::~unique_ptr() [32]
-                0.00    0.00       2/3           std::unique_ptr<Func, std::default_delete<Func> >::operator=(std::unique_ptr<Func, std::default_delete<Func> >&&) [47]
-[22]     0.0    0.00    0.00       3         std::unique_ptr<Func, std::default_delete<Func> >::get_deleter() [22]
-                0.00    0.00       3/3           std::tuple_element<1ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<1ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [25]
+                0.00    0.00       2/3           std::unique_ptr<Func, std::default_delete<Func> >::operator=(std::unique_ptr<Func, std::default_delete<Func> >&&) [46]
+[24]     0.0    0.00    0.00       3         std::unique_ptr<Func, std::default_delete<Func> >::get_deleter() [24]
+                0.00    0.00       3/3           std::tuple_element<1ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<1ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [27]
 -----------------------------------------------
-                0.00    0.00       3/3           std::default_delete<Func>& std::__get_helper<1ul, std::default_delete<Func>>(std::_Tuple_impl<1ul, std::default_delete<Func>>&) [24]
-[23]     0.0    0.00    0.00       3         std::_Tuple_impl<1ul, std::default_delete<Func> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Func> >&) [23]
-                0.00    0.00       3/3           std::_Head_base<1ul, std::default_delete<Func>, true>::_M_head(std::_Head_base<1ul, std::default_delete<Func>, true>&) [21]
+                0.00    0.00       3/3           std::default_delete<Func>& std::__get_helper<1ul, std::default_delete<Func>>(std::_Tuple_impl<1ul, std::default_delete<Func>>&) [26]
+[25]     0.0    0.00    0.00       3         std::_Tuple_impl<1ul, std::default_delete<Func> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Func> >&) [25]
+                0.00    0.00       3/3           std::_Head_base<1ul, std::default_delete<Func>, true>::_M_head(std::_Head_base<1ul, std::default_delete<Func>, true>&) [23]
 -----------------------------------------------
-                0.00    0.00       3/3           std::tuple_element<1ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<1ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [25]
-[24]     0.0    0.00    0.00       3         std::default_delete<Func>& std::__get_helper<1ul, std::default_delete<Func>>(std::_Tuple_impl<1ul, std::default_delete<Func>>&) [24]
-                0.00    0.00       3/3           std::_Tuple_impl<1ul, std::default_delete<Func> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Func> >&) [23]
+                0.00    0.00       3/3           std::tuple_element<1ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<1ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [27]
+[26]     0.0    0.00    0.00       3         std::default_delete<Func>& std::__get_helper<1ul, std::default_delete<Func>>(std::_Tuple_impl<1ul, std::default_delete<Func>>&) [26]
+                0.00    0.00       3/3           std::_Tuple_impl<1ul, std::default_delete<Func> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Func> >&) [25]
 -----------------------------------------------
-                0.00    0.00       3/3           std::unique_ptr<Func, std::default_delete<Func> >::get_deleter() [22]
-[25]     0.0    0.00    0.00       3         std::tuple_element<1ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<1ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [25]
-                0.00    0.00       3/3           std::default_delete<Func>& std::__get_helper<1ul, std::default_delete<Func>>(std::_Tuple_impl<1ul, std::default_delete<Func>>&) [24]
+                0.00    0.00       3/3           std::unique_ptr<Func, std::default_delete<Func> >::get_deleter() [24]
+[27]     0.0    0.00    0.00       3         std::tuple_element<1ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<1ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [27]
+                0.00    0.00       3/3           std::default_delete<Func>& std::__get_helper<1ul, std::default_delete<Func>>(std::_Tuple_impl<1ul, std::default_delete<Func>>&) [26]
 -----------------------------------------------
-                0.00    0.00       3/3           void std::swap<Func*>(Func*&, Func*&) [69]
-[26]     0.0    0.00    0.00       3         std::remove_reference<Func*&>::type&& std::move<Func*&>(Func*&) [26]
+                0.00    0.00       3/3           void std::swap<Func*>(Func*&, Func*&) [55]
+[28]     0.0    0.00    0.00       3         std::remove_reference<Func*&>::type&& std::move<Func*&>(Func*&) [28]
 -----------------------------------------------
-                0.00    0.00       1/3           std::_Head_base<0ul, Func*, false>::_Head_base<Func*&>(Func*&) [39]
-                0.00    0.00       1/3           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl<Func*<std::default_delete<Func> >&, void>(Func*<std::default_delete<Func> >&, (void&&)...) [48]
-                0.00    0.00       1/3           std::tuple<Func*, std::default_delete<Func> >::tuple<Func*&, std::default_delete<Func>, void>(Func*&, std::default_delete<Func>&&) [55]
-[27]     0.0    0.00    0.00       3         Func*& std::forward<Func*&>(std::remove_reference<Func*&>::type&) [27]
------------------------------------------------
-                0.00    0.00       2/2           Manager::Run() [30]
-[28]     0.0    0.00    0.00       2         Func::Run() [28]
-                0.00    0.00       1/1           main::{lambda()#2}::_FUN() [74]
-                0.00    0.00       1/1           main::{lambda()#1}::_FUN() [75]
+                0.00    0.00       1/3           std::_Head_base<0ul, Func*, false>::_Head_base<Func*&>(Func*&) [38]
+                0.00    0.00       1/3           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl<Func*<std::default_delete<Func> >&, void>(Func*<std::default_delete<Func> >&, (void&&)...) [47]
+                0.00    0.00       1/3           std::tuple<Func*, std::default_delete<Func> >::tuple<Func*&, std::default_delete<Func>, void>(Func*&, std::default_delete<Func>&&) [53]
+[29]     0.0    0.00    0.00       3         Func*& std::forward<Func*&>(std::remove_reference<Func*&>::type&) [29]
 -----------------------------------------------
                 0.00    0.00       2/2           Manager::SetFunc(void (*)()) [31]
-[29]     0.0    0.00    0.00       2         Func::SetFunc(void (*)()) [29]
+[30]     0.0    0.00    0.00       2         Func::SetFunc(void (*)()) [30]
 -----------------------------------------------
-                0.00    0.00       2/2           main [6]
-[30]     0.0    0.00    0.00       2         Manager::Run() [30]
-                0.00    0.00       2/2           Func::Run() [28]
-                0.00    0.00       2/4           std::unique_ptr<Func, std::default_delete<Func> >::operator->() const [15]
------------------------------------------------
-                0.00    0.00       2/2           main [6]
+                0.00    0.00       2/2           main [1]
 [31]     0.0    0.00    0.00       2         Manager::SetFunc(void (*)()) [31]
-                0.00    0.00       2/4           std::unique_ptr<Func, std::default_delete<Func> >::operator->() const [15]
-                0.00    0.00       2/2           Func::SetFunc(void (*)()) [29]
+                0.00    0.00       2/4           std::unique_ptr<Func, std::default_delete<Func> >::operator->() const [18]
+                0.00    0.00       2/2           Func::SetFunc(void (*)()) [30]
 -----------------------------------------------
                 0.00    0.00       1/2           Manager::Manager() [35]
                 0.00    0.00       1/2           Manager::~Manager() [36]
 [32]     0.0    0.00    0.00       2         std::unique_ptr<Func, std::default_delete<Func> >::~unique_ptr() [32]
-                0.00    0.00       2/4           std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [20]
-                0.00    0.00       1/3           std::unique_ptr<Func, std::default_delete<Func> >::get_deleter() [22]
+                0.00    0.00       2/4           std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [22]
+                0.00    0.00       1/3           std::unique_ptr<Func, std::default_delete<Func> >::get_deleter() [24]
                 0.00    0.00       1/1           std::default_delete<Func>::operator()(Func*) const [37]
 -----------------------------------------------
-                0.00    0.00       1/1           __libc_csu_init [81]
+                0.00    0.00       1/1           __libc_csu_init [65]
 [33]     0.0    0.00    0.00       1         _GLOBAL__sub_I_main [33]
                 0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [34]
 -----------------------------------------------
                 0.00    0.00       1/1           _GLOBAL__sub_I_main [33]
 [34]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [34]
 -----------------------------------------------
-                0.00    0.00       1/1           main [6]
+                0.00    0.00       1/1           main [1]
 [35]     0.0    0.00    0.00       1         Manager::Manager() [35]
-                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr() [46]
-                0.00    0.00       1/1           std::_MakeUniq<Func>::__single_object std::make_unique<Func>() [68]
-                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::operator=(std::unique_ptr<Func, std::default_delete<Func> >&&) [47]
+                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr() [45]
+                0.00    0.00       1/1           std::_MakeUniq<Func>::__single_object std::make_unique<Func>() [54]
+                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::operator=(std::unique_ptr<Func, std::default_delete<Func> >&&) [46]
                 0.00    0.00       1/2           std::unique_ptr<Func, std::default_delete<Func> >::~unique_ptr() [32]
 -----------------------------------------------
-                0.00    0.00       1/1           main [6]
+                0.00    0.00       1/1           main [1]
 [36]     0.0    0.00    0.00       1         Manager::~Manager() [36]
                 0.00    0.00       1/2           std::unique_ptr<Func, std::default_delete<Func> >::~unique_ptr() [32]
 -----------------------------------------------
                 0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::~unique_ptr() [32]
 [37]     0.0    0.00    0.00       1         std::default_delete<Func>::operator()(Func*) const [37]
 -----------------------------------------------
-                0.00    0.00       1/1           void std::this_thread::sleep_for<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [52]
-[38]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [38]
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl<Func*<std::default_delete<Func> >&, void>(Func*<std::default_delete<Func> >&, (void&&)...) [47]
+[38]     0.0    0.00    0.00       1         std::_Head_base<0ul, Func*, false>::_Head_base<Func*&>(Func*&) [38]
+                0.00    0.00       1/3           Func*& std::forward<Func*&>(std::remove_reference<Func*&>::type&) [29]
 -----------------------------------------------
-                0.00    0.00       1/1           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl<Func*<std::default_delete<Func> >&, void>(Func*<std::default_delete<Func> >&, (void&&)...) [48]
-[39]     0.0    0.00    0.00       1         std::_Head_base<0ul, Func*, false>::_Head_base<Func*&>(Func*&) [39]
-                0.00    0.00       1/3           Func*& std::forward<Func*&>(std::remove_reference<Func*&>::type&) [27]
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl() [48]
+[39]     0.0    0.00    0.00       1         std::_Head_base<0ul, Func*, false>::_Head_base() [39]
 -----------------------------------------------
-                0.00    0.00       1/1           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl() [49]
-[40]     0.0    0.00    0.00       1         std::_Head_base<0ul, Func*, false>::_Head_base() [40]
+                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl<std::default_delete<Func> >(std::default_delete<Func>&&) [49]
+[40]     0.0    0.00    0.00       1         std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base<std::default_delete<Func> >(std::default_delete<Func>&&) [40]
+                0.00    0.00       1/5           std::default_delete<Func>&& std::forward<std::default_delete<Func> >(std::remove_reference<std::default_delete<Func> >::type&) [17]
 -----------------------------------------------
-                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl<std::default_delete<Func> >(std::default_delete<Func>&&) [50]
-[41]     0.0    0.00    0.00       1         std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base<std::default_delete<Func> >(std::default_delete<Func>&&) [41]
-                0.00    0.00       1/5           std::default_delete<Func>&& std::forward<std::default_delete<Func> >(std::remove_reference<std::default_delete<Func> >::type&) [14]
+                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl() [50]
+[41]     0.0    0.00    0.00       1         std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base() [41]
+                0.00    0.00       1/1           std::default_delete<Func>::default_delete() [51]
 -----------------------------------------------
-                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl() [51]
-[42]     0.0    0.00    0.00       1         std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base() [42]
-                0.00    0.00       1/1           std::default_delete<Func>::default_delete() [53]
+                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::operator=(std::unique_ptr<Func, std::default_delete<Func> >&&) [46]
+[42]     0.0    0.00    0.00       1         std::unique_ptr<Func, std::default_delete<Func> >::reset(Func*) [42]
+                0.00    0.00       1/4           std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [22]
+                0.00    0.00       1/1           void std::swap<Func*>(Func*&, Func*&) [55]
 -----------------------------------------------
-                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::operator=(std::unique_ptr<Func, std::default_delete<Func> >&&) [47]
-[43]     0.0    0.00    0.00       1         std::unique_ptr<Func, std::default_delete<Func> >::reset(Func*) [43]
-                0.00    0.00       1/4           std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [20]
-                0.00    0.00       1/1           void std::swap<Func*>(Func*&, Func*&) [69]
+                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::operator=(std::unique_ptr<Func, std::default_delete<Func> >&&) [46]
+[43]     0.0    0.00    0.00       1         std::unique_ptr<Func, std::default_delete<Func> >::release() [43]
+                0.00    0.00       1/5           std::unique_ptr<Func, std::default_delete<Func> >::get() const [12]
+                0.00    0.00       1/4           std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [22]
 -----------------------------------------------
-                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::operator=(std::unique_ptr<Func, std::default_delete<Func> >&&) [47]
-[44]     0.0    0.00    0.00       1         std::unique_ptr<Func, std::default_delete<Func> >::release() [44]
-                0.00    0.00       1/5           std::unique_ptr<Func, std::default_delete<Func> >::get() const [9]
-                0.00    0.00       1/4           std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&) [20]
------------------------------------------------
-                0.00    0.00       1/1           std::_MakeUniq<Func>::__single_object std::make_unique<Func>() [68]
-[45]     0.0    0.00    0.00       1         std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr(Func*) [45]
-                0.00    0.00       1/1           std::tuple<Func*, std::default_delete<Func> >::tuple<Func*&, std::default_delete<Func>, void>(Func*&, std::default_delete<Func>&&) [55]
+                0.00    0.00       1/1           std::_MakeUniq<Func>::__single_object std::make_unique<Func>() [54]
+[44]     0.0    0.00    0.00       1         std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr(Func*) [44]
+                0.00    0.00       1/1           std::tuple<Func*, std::default_delete<Func> >::tuple<Func*&, std::default_delete<Func>, void>(Func*&, std::default_delete<Func>&&) [53]
 -----------------------------------------------
                 0.00    0.00       1/1           Manager::Manager() [35]
-[46]     0.0    0.00    0.00       1         std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr() [46]
-                0.00    0.00       1/1           std::tuple<Func*, std::default_delete<Func> >::tuple() [54]
+[45]     0.0    0.00    0.00       1         std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr() [45]
+                0.00    0.00       1/1           std::tuple<Func*, std::default_delete<Func> >::tuple() [52]
 -----------------------------------------------
                 0.00    0.00       1/1           Manager::Manager() [35]
-[47]     0.0    0.00    0.00       1         std::unique_ptr<Func, std::default_delete<Func> >::operator=(std::unique_ptr<Func, std::default_delete<Func> >&&) [47]
-                0.00    0.00       2/3           std::unique_ptr<Func, std::default_delete<Func> >::get_deleter() [22]
-                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::release() [44]
-                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::reset(Func*) [43]
-                0.00    0.00       1/5           std::default_delete<Func>&& std::forward<std::default_delete<Func> >(std::remove_reference<std::default_delete<Func> >::type&) [14]
+[46]     0.0    0.00    0.00       1         std::unique_ptr<Func, std::default_delete<Func> >::operator=(std::unique_ptr<Func, std::default_delete<Func> >&&) [46]
+                0.00    0.00       2/3           std::unique_ptr<Func, std::default_delete<Func> >::get_deleter() [24]
+                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::release() [43]
+                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::reset(Func*) [42]
+                0.00    0.00       1/5           std::default_delete<Func>&& std::forward<std::default_delete<Func> >(std::remove_reference<std::default_delete<Func> >::type&) [17]
 -----------------------------------------------
-                0.00    0.00       1/1           std::tuple<Func*, std::default_delete<Func> >::tuple<Func*&, std::default_delete<Func>, void>(Func*&, std::default_delete<Func>&&) [55]
-[48]     0.0    0.00    0.00       1         std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl<Func*<std::default_delete<Func> >&, void>(Func*<std::default_delete<Func> >&, (void&&)...) [48]
-                0.00    0.00       1/5           std::default_delete<Func>&& std::forward<std::default_delete<Func> >(std::remove_reference<std::default_delete<Func> >::type&) [14]
-                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl<std::default_delete<Func> >(std::default_delete<Func>&&) [50]
-                0.00    0.00       1/3           Func*& std::forward<Func*&>(std::remove_reference<Func*&>::type&) [27]
-                0.00    0.00       1/1           std::_Head_base<0ul, Func*, false>::_Head_base<Func*&>(Func*&) [39]
+                0.00    0.00       1/1           std::tuple<Func*, std::default_delete<Func> >::tuple<Func*&, std::default_delete<Func>, void>(Func*&, std::default_delete<Func>&&) [53]
+[47]     0.0    0.00    0.00       1         std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl<Func*<std::default_delete<Func> >&, void>(Func*<std::default_delete<Func> >&, (void&&)...) [47]
+                0.00    0.00       1/5           std::default_delete<Func>&& std::forward<std::default_delete<Func> >(std::remove_reference<std::default_delete<Func> >::type&) [17]
+                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl<std::default_delete<Func> >(std::default_delete<Func>&&) [49]
+                0.00    0.00       1/3           Func*& std::forward<Func*&>(std::remove_reference<Func*&>::type&) [29]
+                0.00    0.00       1/1           std::_Head_base<0ul, Func*, false>::_Head_base<Func*&>(Func*&) [38]
 -----------------------------------------------
-                0.00    0.00       1/1           std::tuple<Func*, std::default_delete<Func> >::tuple() [54]
-[49]     0.0    0.00    0.00       1         std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl() [49]
-                0.00    0.00       1/1           std::_Head_base<0ul, Func*, false>::_Head_base() [40]
-                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl() [51]
+                0.00    0.00       1/1           std::tuple<Func*, std::default_delete<Func> >::tuple() [52]
+[48]     0.0    0.00    0.00       1         std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl() [48]
+                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl() [50]
+                0.00    0.00       1/1           std::_Head_base<0ul, Func*, false>::_Head_base() [39]
 -----------------------------------------------
-                0.00    0.00       1/1           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl<Func*<std::default_delete<Func> >&, void>(Func*<std::default_delete<Func> >&, (void&&)...) [48]
-[50]     0.0    0.00    0.00       1         std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl<std::default_delete<Func> >(std::default_delete<Func>&&) [50]
-                0.00    0.00       1/5           std::default_delete<Func>&& std::forward<std::default_delete<Func> >(std::remove_reference<std::default_delete<Func> >::type&) [14]
-                0.00    0.00       1/1           std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base<std::default_delete<Func> >(std::default_delete<Func>&&) [41]
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl<Func*<std::default_delete<Func> >&, void>(Func*<std::default_delete<Func> >&, (void&&)...) [47]
+[49]     0.0    0.00    0.00       1         std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl<std::default_delete<Func> >(std::default_delete<Func>&&) [49]
+                0.00    0.00       1/5           std::default_delete<Func>&& std::forward<std::default_delete<Func> >(std::remove_reference<std::default_delete<Func> >::type&) [17]
+                0.00    0.00       1/1           std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base<std::default_delete<Func> >(std::default_delete<Func>&&) [40]
 -----------------------------------------------
-                0.00    0.00       1/1           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl() [49]
-[51]     0.0    0.00    0.00       1         std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl() [51]
-                0.00    0.00       1/1           std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base() [42]
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl() [48]
+[50]     0.0    0.00    0.00       1         std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl() [50]
+                0.00    0.00       1/1           std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base() [41]
 -----------------------------------------------
-                0.00    0.00       1/1           main::{lambda()#2}::operator()() const [70]
-[52]     0.0    0.00    0.00       1         void std::this_thread::sleep_for<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [52]
-                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1l> >::zero() [62]
-                0.00    0.00       1/1           bool std::chrono::operator<=<long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&) [63]
-                0.00    0.00       1/1           std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1l> > >::value, std::chrono::duration<long, std::ratio<1l, 1l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1l> >, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [57]
-                0.00    0.00       1/1           std::common_type<std::chrono::duration<long, std::ratio<1l, 1l> >, std::chrono::duration<long, std::ratio<1l, 1l> > >::type std::chrono::operator-<long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&) [65]
-                0.00    0.00       1/1           std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [56]
-                0.00    0.00       1/7           std::chrono::duration<long, std::ratio<1l, 1l> >::count() const [8]
-                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [38]
+                0.00    0.00       1/1           std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base() [41]
+[51]     0.0    0.00    0.00       1         std::default_delete<Func>::default_delete() [51]
 -----------------------------------------------
-                0.00    0.00       1/1           std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base() [42]
-[53]     0.0    0.00    0.00       1         std::default_delete<Func>::default_delete() [53]
+                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr() [45]
+[52]     0.0    0.00    0.00       1         std::tuple<Func*, std::default_delete<Func> >::tuple() [52]
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl() [48]
 -----------------------------------------------
-                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr() [46]
-[54]     0.0    0.00    0.00       1         std::tuple<Func*, std::default_delete<Func> >::tuple() [54]
-                0.00    0.00       1/1           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl() [49]
------------------------------------------------
-                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr(Func*) [45]
-[55]     0.0    0.00    0.00       1         std::tuple<Func*, std::default_delete<Func> >::tuple<Func*&, std::default_delete<Func>, void>(Func*&, std::default_delete<Func>&&) [55]
-                0.00    0.00       1/5           std::default_delete<Func>&& std::forward<std::default_delete<Func> >(std::remove_reference<std::default_delete<Func> >::type&) [14]
-                0.00    0.00       1/3           Func*& std::forward<Func*&>(std::remove_reference<Func*&>::type&) [27]
-                0.00    0.00       1/1           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl<Func*<std::default_delete<Func> >&, void>(Func*<std::default_delete<Func> >&, (void&&)...) [48]
------------------------------------------------
-                0.00    0.00       1/1           void std::this_thread::sleep_for<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [52]
-[56]     0.0    0.00    0.00       1         std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [56]
-                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000000000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::ratio<1000000000l, 1l>, long, false, true>::__cast<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [59]
------------------------------------------------
-                0.00    0.00       1/1           void std::this_thread::sleep_for<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [52]
-[57]     0.0    0.00    0.00       1         std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1l> > >::value, std::chrono::duration<long, std::ratio<1l, 1l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1l> >, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [57]
-                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1l> >, std::ratio<1l, 1l>, long, true, true>::__cast<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [60]
------------------------------------------------
-                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1l> >::zero() [62]
-[58]     0.0    0.00    0.00       1         std::chrono::duration_values<long>::zero() [58]
------------------------------------------------
-                0.00    0.00       1/1           std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [56]
-[59]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1000000000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::ratio<1000000000l, 1l>, long, false, true>::__cast<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [59]
-                0.00    0.00       1/7           std::chrono::duration<long, std::ratio<1l, 1l> >::count() const [8]
-                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&) [61]
------------------------------------------------
-                0.00    0.00       1/1           std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1l> > >::value, std::chrono::duration<long, std::ratio<1l, 1l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1l> >, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [57]
-[60]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1l> >, std::ratio<1l, 1l>, long, true, true>::__cast<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [60]
-                0.00    0.00       1/7           std::chrono::duration<long, std::ratio<1l, 1l> >::count() const [8]
-                0.00    0.00       1/4           std::chrono::duration<long, std::ratio<1l, 1l> >::duration<long, void>(long const&) [18]
------------------------------------------------
-                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000000000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::ratio<1000000000l, 1l>, long, false, true>::__cast<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [59]
-[61]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&) [61]
------------------------------------------------
-                0.00    0.00       1/1           void std::this_thread::sleep_for<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [52]
-[62]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1l> >::zero() [62]
-                0.00    0.00       1/1           std::chrono::duration_values<long>::zero() [58]
-                0.00    0.00       1/4           std::chrono::duration<long, std::ratio<1l, 1l> >::duration<long, void>(long const&) [18]
------------------------------------------------
-                0.00    0.00       1/1           void std::this_thread::sleep_for<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [52]
-[63]     0.0    0.00    0.00       1         bool std::chrono::operator<=<long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&) [63]
-                0.00    0.00       1/1           bool std::chrono::operator< <long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&) [64]
------------------------------------------------
-                0.00    0.00       1/1           bool std::chrono::operator<=<long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&) [63]
-[64]     0.0    0.00    0.00       1         bool std::chrono::operator< <long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&) [64]
-                0.00    0.00       2/7           std::chrono::duration<long, std::ratio<1l, 1l> >::count() const [8]
------------------------------------------------
-                0.00    0.00       1/1           void std::this_thread::sleep_for<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [52]
-[65]     0.0    0.00    0.00       1         std::common_type<std::chrono::duration<long, std::ratio<1l, 1l> >, std::chrono::duration<long, std::ratio<1l, 1l> > >::type std::chrono::operator-<long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&) [65]
-                0.00    0.00       2/7           std::chrono::duration<long, std::ratio<1l, 1l> >::count() const [8]
-                0.00    0.00       1/4           std::chrono::duration<long, std::ratio<1l, 1l> >::duration<long, void>(long const&) [18]
------------------------------------------------
-                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1l> > std::literals::chrono_literals::operator"" s<(char)49>() [67]
-[66]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1l> > std::literals::chrono_literals::__check_overflow<std::chrono::duration<long, std::ratio<1l, 1l> >, (char)49>() [66]
-                0.00    0.00       1/4           std::chrono::duration<long, std::ratio<1l, 1l> >::duration<long, void>(long const&) [18]
------------------------------------------------
-                0.00    0.00       1/1           main::{lambda()#2}::operator()() const [70]
-[67]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1l> > std::literals::chrono_literals::operator"" s<(char)49>() [67]
-                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1l> > std::literals::chrono_literals::__check_overflow<std::chrono::duration<long, std::ratio<1l, 1l> >, (char)49>() [66]
+                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr(Func*) [44]
+[53]     0.0    0.00    0.00       1         std::tuple<Func*, std::default_delete<Func> >::tuple<Func*&, std::default_delete<Func>, void>(Func*&, std::default_delete<Func>&&) [53]
+                0.00    0.00       1/5           std::default_delete<Func>&& std::forward<std::default_delete<Func> >(std::remove_reference<std::default_delete<Func> >::type&) [17]
+                0.00    0.00       1/3           Func*& std::forward<Func*&>(std::remove_reference<Func*&>::type&) [29]
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl<Func*<std::default_delete<Func> >&, void>(Func*<std::default_delete<Func> >&, (void&&)...) [47]
 -----------------------------------------------
                 0.00    0.00       1/1           Manager::Manager() [35]
-[68]     0.0    0.00    0.00       1         std::_MakeUniq<Func>::__single_object std::make_unique<Func>() [68]
-                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr(Func*) [45]
+[54]     0.0    0.00    0.00       1         std::_MakeUniq<Func>::__single_object std::make_unique<Func>() [54]
+                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr(Func*) [44]
 -----------------------------------------------
-                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::reset(Func*) [43]
-[69]     0.0    0.00    0.00       1         void std::swap<Func*>(Func*&, Func*&) [69]
-                0.00    0.00       3/3           std::remove_reference<Func*&>::type&& std::move<Func*&>(Func*&) [26]
+                0.00    0.00       1/1           std::unique_ptr<Func, std::default_delete<Func> >::reset(Func*) [42]
+[55]     0.0    0.00    0.00       1         void std::swap<Func*>(Func*&, Func*&) [55]
+                0.00    0.00       3/3           std::remove_reference<Func*&>::type&& std::move<Func*&>(Func*&) [28]
 -----------------------------------------------
-                0.00    0.00       1/1           main::{lambda()#2}::_FUN() [74]
-[70]     0.0    0.00    0.00       1         main::{lambda()#2}::operator()() const [70]
-                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1l> > std::literals::chrono_literals::operator"" s<(char)49>() [67]
-                0.00    0.00       1/1           void std::this_thread::sleep_for<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [52]
+                0.00    0.00       1/1           main [1]
+[56]     0.0    0.00    0.00       1         main::{lambda()#2}::operator void (*)()() const [56]
 -----------------------------------------------
-                0.00    0.00       1/1           main [6]
-[71]     0.0    0.00    0.00       1         main::{lambda()#2}::operator void (*)()() const [71]
+                0.00    0.00       1/1           main::{lambda()#1}::_FUN() [59]
+[57]     0.0    0.00    0.00       1         main::{lambda()#1}::operator()() const [57]
 -----------------------------------------------
-                0.00    0.00       1/1           main::{lambda()#1}::_FUN() [75]
-[72]     0.0    0.00    0.00       1         main::{lambda()#1}::operator()() const [72]
+                0.00    0.00       1/1           main [1]
+[58]     0.0    0.00    0.00       1         main::{lambda()#1}::operator void (*)()() const [58]
 -----------------------------------------------
-                0.00    0.00       1/1           main [6]
-[73]     0.0    0.00    0.00       1         main::{lambda()#1}::operator void (*)()() const [73]
------------------------------------------------
-                0.00    0.00       1/1           Func::Run() [28]
-[74]     0.0    0.00    0.00       1         main::{lambda()#2}::_FUN() [74]
-                0.00    0.00       1/1           main::{lambda()#2}::operator()() const [70]
------------------------------------------------
-                0.00    0.00       1/1           Func::Run() [28]
-[75]     0.0    0.00    0.00       1         main::{lambda()#1}::_FUN() [75]
-                0.00    0.00       1/1           main::{lambda()#1}::operator()() const [72]
+                0.00    0.00       1/1           Func::Run() [2]
+[59]     0.0    0.00    0.00       1         main::{lambda()#1}::_FUN() [59]
+                0.00    0.00       1/1           main::{lambda()#1}::operator()() const [57]
 -----------------------------------------------
 
  This table describes the call tree of the program, and was sorted by
@@ -507,26 +329,21 @@ notice and this notice are preserved.
 
 Index by function name
 
-  [33] _GLOBAL__sub_I_main    [45] std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr(Func*) [63] bool std::chrono::operator<=<long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&)
-  [34] __static_initialization_and_destruction_0(int, int) [46] std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr() [64] bool std::chrono::operator< <long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&)
-  [28] Func::Run()            [32] std::unique_ptr<Func, std::default_delete<Func> >::~unique_ptr() [65] std::common_type<std::chrono::duration<long, std::ratio<1l, 1l> >, std::chrono::duration<long, std::ratio<1l, 1l> > >::type std::chrono::operator-<long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&)
-  [29] Func::SetFunc(void (*)()) [47] std::unique_ptr<Func, std::default_delete<Func> >::operator=(std::unique_ptr<Func, std::default_delete<Func> >&&) [66] std::chrono::duration<long, std::ratio<1l, 1l> > std::literals::chrono_literals::__check_overflow<std::chrono::duration<long, std::ratio<1l, 1l> >, (char)49>()
-  [30] Manager::Run()         [11] std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&) [67] std::chrono::duration<long, std::ratio<1l, 1l> > std::literals::chrono_literals::operator"" s<(char)49>()
-  [31] Manager::SetFunc(void (*)()) [17] std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >&) [68] std::_MakeUniq<Func>::__single_object std::make_unique<Func>()
-  [35] Manager::Manager()     [48] std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl<Func*<std::default_delete<Func> >&, void>(Func*<std::default_delete<Func> >&, (void&&)...) [19] _ZSt12__get_helperILm0EP4FuncISt14default_deleteIS0_EEERT0_RSt11_Tuple_implIXT_EIS4_DpT1_EE
-  [36] Manager::~Manager()    [49] std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl() [12] Func* const& std::__get_helper<0ul, Func*, std::default_delete<Func> >(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&)
-   [9] std::unique_ptr<Func, std::default_delete<Func> >::get() const [23] std::_Tuple_impl<1ul, std::default_delete<Func> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Func> >&) [24] std::default_delete<Func>& std::__get_helper<1ul, std::default_delete<Func>>(std::_Tuple_impl<1ul, std::default_delete<Func>>&)
-  [15] std::unique_ptr<Func, std::default_delete<Func> >::operator->() const [50] std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl<std::default_delete<Func> >(std::default_delete<Func>&&) [13] std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type const& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> > const&)
-  [37] std::default_delete<Func>::operator()(Func*) const [51] std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl() [20] std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&)
-  [38] std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [52] void std::this_thread::sleep_for<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [25] std::tuple_element<1ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<1ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&)
-   [8] std::chrono::duration<long, std::ratio<1l, 1l> >::count() const [53] std::default_delete<Func>::default_delete() [26] std::remove_reference<Func*&>::type&& std::move<Func*&>(Func*&)
-  [10] std::_Head_base<0ul, Func*, false>::_M_head(std::_Head_base<0ul, Func*, false> const&) [54] std::tuple<Func*, std::default_delete<Func> >::tuple() [69] void std::swap<Func*>(Func*&, Func*&)
-  [16] std::_Head_base<0ul, Func*, false>::_M_head(std::_Head_base<0ul, Func*, false>&) [55] std::tuple<Func*, std::default_delete<Func> >::tuple<Func*&, std::default_delete<Func>, void>(Func*&, std::default_delete<Func>&&) [27] Func*& std::forward<Func*&>(std::remove_reference<Func*&>::type&)
-  [39] std::_Head_base<0ul, Func*, false>::_Head_base<Func*&>(Func*&) [56] std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [14] std::default_delete<Func>&& std::forward<std::default_delete<Func> >(std::remove_reference<std::default_delete<Func> >::type&)
-  [40] std::_Head_base<0ul, Func*, false>::_Head_base() [57] std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1l> > >::value, std::chrono::duration<long, std::ratio<1l, 1l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1l> >, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [70] main::{lambda()#2}::operator()() const
-  [21] std::_Head_base<1ul, std::default_delete<Func>, true>::_M_head(std::_Head_base<1ul, std::default_delete<Func>, true>&) [58] std::chrono::duration_values<long>::zero() [71] main::{lambda()#2}::operator void (*)()() const
-  [41] std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base<std::default_delete<Func> >(std::default_delete<Func>&&) [59] std::chrono::duration<long, std::ratio<1l, 1000000000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::ratio<1000000000l, 1l>, long, false, true>::__cast<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [72] main::{lambda()#1}::operator()() const
-  [42] std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base() [60] std::chrono::duration<long, std::ratio<1l, 1l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1l> >, std::ratio<1l, 1l>, long, true, true>::__cast<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [73] main::{lambda()#1}::operator void (*)()() const
-  [22] std::unique_ptr<Func, std::default_delete<Func> >::get_deleter() [61] std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&) [74] main::{lambda()#2}::_FUN()
-  [43] std::unique_ptr<Func, std::default_delete<Func> >::reset(Func*) [62] std::chrono::duration<long, std::ratio<1l, 1l> >::zero() [75] main::{lambda()#1}::_FUN()
-  [44] std::unique_ptr<Func, std::default_delete<Func> >::release() [18] std::chrono::duration<long, std::ratio<1l, 1l> >::duration<long, void>(long const&)
+  [33] _GLOBAL__sub_I_main    [24] std::unique_ptr<Func, std::default_delete<Func> >::get_deleter() [21] _ZSt12__get_helperILm0EP4FuncISt14default_deleteIS0_EEERT0_RSt11_Tuple_implIXT_EIS4_DpT1_EE
+  [34] __static_initialization_and_destruction_0(int, int) [42] std::unique_ptr<Func, std::default_delete<Func> >::reset(Func*) [15] Func* const& std::__get_helper<0ul, Func*, std::default_delete<Func> >(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&)
+   [2] Func::Run()            [43] std::unique_ptr<Func, std::default_delete<Func> >::release() [26] std::default_delete<Func>& std::__get_helper<1ul, std::default_delete<Func>>(std::_Tuple_impl<1ul, std::default_delete<Func>>&)
+  [30] Func::SetFunc(void (*)()) [44] std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr(Func*) [16] std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type const& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> > const&)
+   [3] Manager::Run()         [45] std::unique_ptr<Func, std::default_delete<Func> >::unique_ptr() [22] std::tuple_element<0ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<0ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&)
+  [31] Manager::SetFunc(void (*)()) [32] std::unique_ptr<Func, std::default_delete<Func> >::~unique_ptr() [27] std::tuple_element<1ul, std::tuple<Func*, std::default_delete<Func> > >::type& std::get<1ul, Func*, std::default_delete<Func> >(std::tuple<Func*, std::default_delete<Func> >&)
+  [35] Manager::Manager()     [46] std::unique_ptr<Func, std::default_delete<Func> >::operator=(std::unique_ptr<Func, std::default_delete<Func> >&&) [28] std::remove_reference<Func*&>::type&& std::move<Func*&>(Func*&)
+  [36] Manager::~Manager()    [14] std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> > const&) [55] void std::swap<Func*>(Func*&, Func*&)
+  [12] std::unique_ptr<Func, std::default_delete<Func> >::get() const [20] std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_M_head(std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >&) [29] Func*& std::forward<Func*&>(std::remove_reference<Func*&>::type&)
+  [18] std::unique_ptr<Func, std::default_delete<Func> >::operator->() const [47] std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl<Func*<std::default_delete<Func> >&, void>(Func*<std::default_delete<Func> >&, (void&&)...) [17] std::default_delete<Func>&& std::forward<std::default_delete<Func> >(std::remove_reference<std::default_delete<Func> >::type&)
+  [37] std::default_delete<Func>::operator()(Func*) const [48] std::_Tuple_impl<0ul, Func*, std::default_delete<Func> >::_Tuple_impl() [4] main::{lambda()#2}::operator()() const
+  [13] std::_Head_base<0ul, Func*, false>::_M_head(std::_Head_base<0ul, Func*, false> const&) [25] std::_Tuple_impl<1ul, std::default_delete<Func> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Func> >&) [56] main::{lambda()#2}::operator void (*)()() const
+  [19] std::_Head_base<0ul, Func*, false>::_M_head(std::_Head_base<0ul, Func*, false>&) [49] std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl<std::default_delete<Func> >(std::default_delete<Func>&&) [57] main::{lambda()#1}::operator()() const
+  [38] std::_Head_base<0ul, Func*, false>::_Head_base<Func*&>(Func*&) [50] std::_Tuple_impl<1ul, std::default_delete<Func> >::_Tuple_impl() [58] main::{lambda()#1}::operator void (*)()() const
+  [39] std::_Head_base<0ul, Func*, false>::_Head_base() [51] std::default_delete<Func>::default_delete() [5] main::{lambda()#2}::_FUN()
+  [23] std::_Head_base<1ul, std::default_delete<Func>, true>::_M_head(std::_Head_base<1ul, std::default_delete<Func>, true>&) [52] std::tuple<Func*, std::default_delete<Func> >::tuple() [59] main::{lambda()#1}::_FUN()
+  [40] std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base<std::default_delete<Func> >(std::default_delete<Func>&&) [53] std::tuple<Func*, std::default_delete<Func> >::tuple<Func*&, std::default_delete<Func>, void>(Func*&, std::default_delete<Func>&&)
+  [41] std::_Head_base<1ul, std::default_delete<Func>, true>::_Head_base() [54] std::_MakeUniq<Func>::__single_object std::make_unique<Func>()

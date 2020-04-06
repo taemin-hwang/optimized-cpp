@@ -34,8 +34,11 @@ int main() {
     manager_.SetFunc([]() { cout << "hello gprof" << endl;});
     manager_.Run();
     manager_.SetFunc([]() {
-        cout << "hello gprof" << endl;
-        this_thread::sleep_for(1s);
+        int sum = 0;
+        for(int i = 0; i < 10000000; i++) {
+            sum++;
+        }
+        cout << "hello gprof : " << sum << endl;
         });
     manager_.Run();
 }
