@@ -4,15 +4,16 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <memory>
+#include "LogPrefix.h"
 
 using namespace std;
 
-enum LOGLEVEL { FATAL, ERROR, WARN, INFO, DEBUG };
-
 class Logger {
   public:
-    Logger(LOGLEVEL loglevel_ = ERROR) {
-        _buffer << loglevel_ << " : " << std::string (loglevel_ > DEBUG ? (loglevel_ - DEBUG) * 4 : 1, ' ');
+    Logger(LOGLEVEL level) {
+        _logprefix = std::make_unique<LogPrefix>(level);
+        _buffer << _logprefix->GetMessage() << " ";
     }
 
     template <typename T>
@@ -28,6 +29,7 @@ class Logger {
 
   private:
     std::ostringstream _buffer;
+    std::unique_ptr<LogPrefix> _logprefix;
 };
 
 extern LOGLEVEL loglevel;
@@ -35,5 +37,25 @@ extern LOGLEVEL loglevel;
 #define log(level) \
 if(level > loglevel) ; \
 else Logger(level)
+
+#define logFatal \
+if(LOGLEVEL::FATAL > loglevel) ; \
+else Logger(LOGLEVEL::FATAL)
+
+#define logError \
+if(LOGLEVEL::ERROR > loglevel) ; \
+else Logger(LOGLEVEL::ERROR)
+
+#define logWarn \
+if(LOGLEVEL::WARN > loglevel) ; \
+else Logger(LOGLEVEL::WARN)
+
+#define logInfo \
+if(LOGLEVEL::INFO > loglevel) ; \
+else Logger(LOGLEVEL::INFO)
+
+#define logDebug \
+if(LOGLEVEL::DEBUG > loglevel) ; \
+else Logger(LOGLEVEL::DEBUG)
 
 #endif
