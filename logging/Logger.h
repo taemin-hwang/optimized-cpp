@@ -29,6 +29,7 @@ class Logger {
 
   private:
     std::ostringstream _buffer;
+    //TODO remove unique_ptr
     std::unique_ptr<LogPrefix> _logprefix;
 };
 
