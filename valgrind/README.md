@@ -11,7 +11,7 @@ sudo apt-get install kcachegrind
 ## compile option (-g)
 + add -g compile option to add debug symbol
 ```
-g++ sample.cpp -std=c++14 -g
+g++ main.cpp -std=c++14 -g
 ```
 
 ## memory checker

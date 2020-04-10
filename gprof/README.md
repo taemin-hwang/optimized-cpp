@@ -2,7 +2,7 @@
 
 ### compile option (-pg)
 ```
-g++ sample.cpp -pg
+g++ main.cpp -pg
 ```
 
 ### run
