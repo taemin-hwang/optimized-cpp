@@ -18,7 +18,7 @@ public:
 
     //void EnqueueJob(std::function<void()> job);
     template<class F, class... Args>
-    std::future<typename std::result_of<F(Args...)>::type> EnqueueJob(F f, Args... args);
+    std::future<typename std::result_of<F(Args...)>::type> EnqueueJob(F&& f, Args&&... args);
 
 private:
     size_t num_threads_;
@@ -32,14 +32,15 @@ private:
 };
 
 template<class F, class... Args>
-std::future<typename std::result_of<F(Args...)>::type> ThreadPool::EnqueueJob(F f, Args... args) {
+std::future<typename std::result_of<F(Args...)>::type> ThreadPool::EnqueueJob(F&& f, Args&&... args) {
     if(stop_all) {
         throw std::runtime_error("Threadpool exit");
     }
 
     using return_type = typename std::result_of<F(Args...)>::type;
 
-    auto job = std::make_shared<std::packaged_task<return_type()>>(std::bind(f, args...));
+    auto job = std::make_shared<std::packaged_task<return_type()>>(
+        std::bind(std::forward<F>(f), std::forward<Args>(args)...));
 
     std::future<return_type> job_result_future = job->get_future();
     {
