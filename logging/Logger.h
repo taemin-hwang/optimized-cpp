@@ -9,11 +9,13 @@
 
 using namespace std;
 
+LOGLEVEL loglevel = LOGLEVEL::DEBUG;
+
 class Logger {
   public:
     Logger(LOGLEVEL level) {
-        _logprefix = std::make_unique<LogPrefix>(level);
-        _buffer << _logprefix->GetMessage() << " ";
+        _logprefix = LogPrefix(level);
+        _buffer << _logprefix.GetMessage() << " ";
     }
 
     template <typename T>
@@ -29,11 +31,8 @@ class Logger {
 
   private:
     std::ostringstream _buffer;
-    //TODO remove unique_ptr
-    std::unique_ptr<LogPrefix> _logprefix;
+    LogPrefix _logprefix;
 };
-
-extern LOGLEVEL loglevel;
 
 #define log(level) \
 if(level > loglevel) ; \

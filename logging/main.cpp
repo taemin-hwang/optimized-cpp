@@ -3,10 +3,12 @@
 
 using namespace std;
 
-LOGLEVEL loglevel = LOGLEVEL::ERROR;
+class Foo {
+ public:
+    Foo() { logInfo << __func__; }
+};
 
 int main() {
-    loglevel = LOGLEVEL::DEBUG;
     logInfo << "Info message : " << 1;
 
     int count = 3;
@@ -15,4 +17,6 @@ int main() {
     for(int i = 0; i < count; ++i) {
         logError << "the counter i = " << i;
     }
+
+    Foo f;
 }
